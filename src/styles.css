@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #4CAF50; /* Adjust color as needed */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+#chart-container {
+    flex: 3;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#options-panel {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border-left: 1px solid #ccc;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+canvas {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.tab {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab button {
+    background-color: #eee;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    width: 100%;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+#categoryCheckboxes {
+    margin-bottom: 10px;
+}
